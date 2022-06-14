@@ -2,14 +2,14 @@
 katz_deli = []
 
 def line(deli)
-    current_line =[]
+    new_line =[]
     if deli.size == 0
        puts "The line is currently empty."
     else 
-        deli.each.with_index(1) do |person, i|
-            current_line.push(" #{i}. #{person}")
+        deli.each.with_index(1) do |person, index|
+            new_line.push(" #{index}. #{person}")
         end
-        puts "The line is currently:#{current_line.join}"
+        puts "The line is currently:#{new_line.join}"
     end      
 end
 
